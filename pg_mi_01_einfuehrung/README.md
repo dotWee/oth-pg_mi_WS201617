@@ -3,7 +3,7 @@ Beispiele zur ersten Vorlesungseinheit
 
 Übersetzen:
 
-gcc hello&_world.c -o Hello
+gcc hello\_world.c -o Hello
 
 oder
 
