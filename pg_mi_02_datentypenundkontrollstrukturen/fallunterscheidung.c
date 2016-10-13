@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#define ERROR_DIVISION_BY_INFINITY 2
 #define ERROR_DIVISION_BY_ZERO 1
 #define SUCCESS 0
 
