@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
   printf("Wert 2: ");
   scanf("%d", &v2);
 
-  // 1. Fall: Prüfung Division 0 durch 0
+  // 1. Fall: Ist mindestens eine 0 am Ausdruck beteiligt
   if(v1 == 0 || v2 == 0) {
     printf("Null beteiligt\n");
     // 2. Fall: Division durch 0
