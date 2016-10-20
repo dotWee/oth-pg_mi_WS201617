@@ -1,0 +1,7 @@
+solved  | task
+        | task_00_division-durch-2
+   x    | task_01_ermittle-das-maximum
+   x    | task_02_summer-einer-liste-von-zahlen-berechnen
+   x    | task_03_mittelwert-berechnen
+        | task_04_potenzen
+        | task_05_wurzel-ziehen
