@@ -12,9 +12,11 @@
       <sourceFolder url="file://$MODULE_DIR$/task_03_mittelwert-berechnen/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_04_potenzen/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_04_potenzen/task_04_potenzen.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/task_08_sortieren-einer-liste-von-zahlen/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/task_08_sortieren-einer-liste-von-zahlen/sortieren.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_00_division-durch-2/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_00_division-durch-2/task_00_division-durch-2.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

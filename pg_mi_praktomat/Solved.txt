@@ -5,3 +5,4 @@ solved  | task
    x    | task_03_mittelwert-berechnen
         | task_04_potenzen
         | task_05_wurzel-ziehen
+   x    | task_08_sortieren-einer-liste-von-zahlen
