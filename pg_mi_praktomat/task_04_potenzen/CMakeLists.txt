@@ -3,5 +3,5 @@ project(task_04_potenzen)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
 
-set(SOURCE_FILES task_04_potenzen.c task_04_potenzen.c)
+set(SOURCE_FILES getpower.c getpower.c)
 add_executable(task_04_potenzen ${SOURCE_FILES})

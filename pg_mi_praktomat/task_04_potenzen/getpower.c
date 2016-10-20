@@ -15,10 +15,20 @@ int main(void) {
 
     // Ergebnisses von Typ double einfügen.
     result = basis;
-    while (exponent != 0) {
-        result = result * exponent;
-        exponent = exponent - 1;
+    if (exponent == 0) {
+        result = 1;
+    } else {
+        while (exponent != 0) {
+            result = result * exponent;
+
+            if (exponent < 0) {
+                exponent++;
+            } else {
+                exponent--;
+            }
+        }
     }
 
     printf("Ergebnis: %lf\n", result);
+    return 0;
 }
