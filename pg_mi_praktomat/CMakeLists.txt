@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
 project(pg_mi_praktomat)
 
+add_subdirectory(task_00_buchstaben-zaehlen)
 add_subdirectory(task_00_division-durch-2)
 add_subdirectory(task_01_ermittle-das-maximum)
 add_subdirectory(task_02_summer-einer-liste-von-zahlen-berechnen)
