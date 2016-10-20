@@ -10,11 +10,11 @@ int main(void) {
 
     scanf("%d", &num);
 
+    // Bitte hier die Lösung einfügen
     while(num != 1) {
         num = num / 2;
         count++;
     }
-    // Bitte hier die Lösung einfügen
 
     printf("%d", count);
 
