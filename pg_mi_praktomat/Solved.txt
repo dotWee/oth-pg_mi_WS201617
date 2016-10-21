@@ -5,5 +5,5 @@ solved  | task
    x    | task_02_summer-einer-liste-von-zahlen-berechnen
    x    | task_03_mittelwert-berechnen
    x    | task_04_potenzen
-        | task_05_wurzel-ziehen
+   x    | task_05_wurzel-ziehen
    x    | task_08_sortieren-einer-liste-von-zahlen
