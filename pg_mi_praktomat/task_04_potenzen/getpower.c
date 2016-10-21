@@ -14,25 +14,35 @@ int main(void) {
     scanf("%d", &exponent);
 
     // Ergebnisses von Typ double einfügen.
+    switch (exponent) {
 
-    if (exponent == -1) {
-        result = 0 - basis;
-    } else if (exponent == 0) {
-        result = 1;
-    } else if (exponent == 1) {
-        result = basis;
-    } else if (exponent > 1) {
-        result = 1;
+        case -1:
+            result = 0 - basis;
+            break;
 
-        for (int n = 1; n <= exponent; n++) {
-            result = result * basis;
-        }
-    } else if (exponent < -1) {
-        result = 1;
+        case 0:
+            result = 1;
+            break;
 
-        for (int n = 0; n > exponent; n--) {
-            result = result / basis;
-        }
+        case 1:
+            result = basis;
+            break;
+
+        default:
+            if (exponent > 1) {
+                result = 1;
+
+                for (int n = 1; n <= exponent; n++) {
+                    result = result * basis;
+                }
+            } else if (exponent < -1) {
+                result = 1;
+
+                for (int n = 0; n > exponent; n--) {
+                    result = result / basis;
+                }
+            }
+            break;
     }
 
     printf("Ergebnis: %lf\n", result);
