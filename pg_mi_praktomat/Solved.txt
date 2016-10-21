@@ -1,6 +1,6 @@
 solved  | task
    x    | task_00_buchstaben-zaehlen
-        | task_00_division-durch-2
+   x    | task_00_division-durch-2
    x    | task_01_ermittle-das-maximum
    x    | task_02_summer-einer-liste-von-zahlen-berechnen
    x    | task_03_mittelwert-berechnen

@@ -11,9 +11,13 @@ int main(void) {
     scanf("%d", &num);
 
     // Bitte hier die Lösung einfügen
-    while(num != 1) {
-        num = num / 2;
-        count++;
+    if (num != 0) {
+        while (num != 1) {
+            num = num / 2;
+            count++;
+        }
+    } else {
+        count = 0;
     }
 
     printf("%d", count);
