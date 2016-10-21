@@ -4,6 +4,6 @@ solved  | task
    x    | task_01_ermittle-das-maximum
    x    | task_02_summer-einer-liste-von-zahlen-berechnen
    x    | task_03_mittelwert-berechnen
-        | task_04_potenzen
+   x    | task_04_potenzen
         | task_05_wurzel-ziehen
    x    | task_08_sortieren-einer-liste-von-zahlen
