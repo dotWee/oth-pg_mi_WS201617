@@ -15,7 +15,7 @@ int main(void) {
     hypotenuse = sqrt(hypotenuse);
 
     printf("---------");
-    printf("\nHypotenuse: %lf", flaeche);
+    printf("\nHypotenuse: %lf", hypotenuse);
 
     return 0;
 }
