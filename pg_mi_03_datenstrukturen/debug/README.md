@@ -30,3 +30,5 @@ gesprungen werden.
 Mit dem Befehl print kann der Inhalt einer Variable ausgegeben werden.
 
 print xvalue
+
+Mit dem Befehl quit lässt sich eine Debug-Sitzung (auch vorzeitig) abbrechen.
