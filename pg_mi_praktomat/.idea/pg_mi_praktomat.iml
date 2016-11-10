@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/task_00_buchstaben-zaehlen/charcounter.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_03_mittelwert-berechnen/calculateavg.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_03_mittelwert-berechnen/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/task_06_zeichen-ersetzen/ersetze.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/task_06_zeichen-ersetzen/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_04_potenzen/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_04_potenzen/getpower.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/task_01_ermittle-das-maximum/getmax.c" isTestSource="false" />
