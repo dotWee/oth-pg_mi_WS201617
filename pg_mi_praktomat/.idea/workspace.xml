@@ -11,6 +11,7 @@
       <config projectName="pg_mi_praktomat" targetName="task_02_summer-einer-liste-von-zahlen-berechnen" />
       <config projectName="pg_mi_praktomat" targetName="task_05_wurzel-ziehen" />
       <config projectName="pg_mi_praktomat" targetName="task_06_zeichen-ersetzen" />
+      <config projectName="pg_mi_praktomat" targetName="task_07_zeichenketten-ersetzen" />
       <config projectName="pg_mi_praktomat" targetName="task_00_buchstaben-zaehlen" />
       <config projectName="pg_mi_praktomat" targetName="task_01_ermittle-das-maximum" />
     </generated>
@@ -22,8 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6445dbaa-81e5-4452-a203-eda2a123a599" name="Default" comment="Add solutio">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task_06_zeichen-ersetzen/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task_06_zeichen-ersetzen/ersetze.c" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task_07_zeichenketten-ersetzen/CMakeLists.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task_07_zeichenketten-ersetzen/str_replace.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pg_mi_praktomat.iml" afterPath="$PROJECT_DIR$/.idea/pg_mi_praktomat.iml" />
@@ -49,21 +48,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="division2.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_00_division-durch-2/division2.c">
+      <file leaf-file-name="str_replace.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task_07_zeichenketten-ersetzen/str_replace.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="26" selection-start-line="13" selection-start-column="19" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="268">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Solved.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solved.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_06_zeichen-ersetzen/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="56" />
+            <state relative-caret-position="187">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -72,84 +83,10 @@
       <file leaf-file-name="ersetze.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task_06_zeichen-ersetzen/ersetze.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_07_zeichenketten-ersetzen/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="str_replace.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_07_zeichenketten-ersetzen/str_replace.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Solved.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Solved.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_08_sortieren-einer-liste-von-zahlen/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculateavg.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_03_mittelwert-berechnen/calculateavg.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-              <folding>
-                <element signature="e#41#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getmax.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_01_ermittle-das-maximum/getmax.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,9 +124,10 @@
         <option value="$PROJECT_DIR$/task_00_division-durch-2/division2.c" />
         <option value="$PROJECT_DIR$/task_06_zeichen-ersetzen/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/task_07_zeichenketten-ersetzen/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/task_06_zeichen-ersetzen/ersetze.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Solved.txt" />
+        <option value="$PROJECT_DIR$/task_07_zeichenketten-ersetzen/str_replace.c" />
       </list>
     </option>
   </component>
@@ -200,8 +138,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="866" />
+    <option name="width" value="1061" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -257,6 +195,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="task_08_sortieren-einer-liste-von-zahlen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pg_mi_praktomat" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pg_mi_praktomat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="task_07_zeichenketten-ersetzen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -294,7 +246,7 @@
       <recent name="D:\Projekte\Studium\pg_mi_WS201617\pg_mi_praktomat\task_00_division-durch-2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.task_06_zeichen-ersetzen">
+  <component name="RunManager" selected="Application.task_07_zeichenketten-ersetzen">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="pg_mi_praktomat" TARGET_NAME="pg_mi_praktomat" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -516,7 +468,11 @@
       <envs />
       <method />
     </configuration>
-    <list size="10">
+    <configuration default="false" name="task_07_zeichenketten-ersetzen" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;Max&quot; &quot;Moritz&quot; &quot;Max und Moritz, diese beiden konnten den armen Max nicht leiden ...&quot;" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="pg_mi_praktomat" TARGET_NAME="task_07_zeichenketten-ersetzen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="pg_mi_praktomat" RUN_TARGET_NAME="task_07_zeichenketten-ersetzen">
+      <envs />
+      <method />
+    </configuration>
+    <list size="11">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.task_00_division-durch-2" />
       <item index="2" class="java.lang.String" itemvalue="Application.task_01_ermittle-das-maximum" />
@@ -527,6 +483,7 @@
       <item index="7" class="java.lang.String" itemvalue="Application.task_08_sortieren-einer-liste-von-zahlen" />
       <item index="8" class="java.lang.String" itemvalue="Application.task_00_buchstaben-zaehlen" />
       <item index="9" class="java.lang.String" itemvalue="Application.task_06_zeichen-ersetzen" />
+      <item index="10" class="java.lang.String" itemvalue="Application.task_07_zeichenketten-ersetzen" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -547,7 +504,7 @@
       <workItem from="1477074251478" duration="4258000" />
       <workItem from="1477244848722" duration="2676000" />
       <workItem from="1477500062718" duration="102000" />
-      <workItem from="1478784513903" duration="1169000" />
+      <workItem from="1478784513903" duration="2537000" />
     </task>
     <task id="LOCAL-00001" summary="Fix wrong comment position">
       <created>1476967639180</created>
@@ -640,11 +597,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478784872072</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add solution for task 06: Zeichen ersetzen">
+      <created>1478785721317</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1478785721317</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23455000" />
+    <option name="totallyTimeSpent" value="24823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,12 +620,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="866" y="0" width="1061" height="1047" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30982906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28347996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7961956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -724,7 +688,8 @@
     <MESSAGE value="Finalize solution for task 00: Division durch 2" />
     <MESSAGE value="Finalize solution for task 05: Wurzel ziehen" />
     <MESSAGE value="Add currently unsolved tasks to list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add currently unsolved tasks to list" />
+    <MESSAGE value="Add solution for task 06: Zeichen ersetzen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add solution for task 06: Zeichen ersetzen" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1023,16 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task_01_ermittle-das-maximum/getmax.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task_00_division-durch-2/division2.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1065,26 +1020,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task_07_zeichenketten-ersetzen/str_replace.c">
+    <entry file="file://$PROJECT_DIR$/task_01_ermittle-das-maximum/getmax.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task_06_zeichen-ersetzen/ersetze.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -1093,9 +1042,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Solved.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task_07_zeichenketten-ersetzen/str_replace.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

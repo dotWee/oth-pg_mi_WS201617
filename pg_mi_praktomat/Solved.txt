@@ -7,5 +7,5 @@ solved  | task
    x    | task_04_potenzen
    x    | task_05_wurzel-ziehen
    x    | task_06_zeichen-ersetzen
-        | task_07_zeichenketten-ersetzen
+   x    | task_07_zeichenketten-ersetzen
    x    | task_08_sortieren-einer-liste-von-zahlen

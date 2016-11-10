@@ -9,6 +9,7 @@ add_subdirectory(task_03_mittelwert-berechnen)
 add_subdirectory(task_04_potenzen)
 add_subdirectory(task_05_wurzel-ziehen)
 add_subdirectory(task_06_zeichen-ersetzen)
+add_subdirectory(task_07_zeichenketten-ersetzen)
 add_subdirectory(task_08_sortieren-einer-liste-von-zahlen)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
