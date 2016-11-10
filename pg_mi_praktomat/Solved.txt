@@ -6,4 +6,6 @@ solved  | task
    x    | task_03_mittelwert-berechnen
    x    | task_04_potenzen
    x    | task_05_wurzel-ziehen
+        | task_06_zeichen-ersetzen
+        | task_07_zeichenketten-ersetzen
    x    | task_08_sortieren-einer-liste-von-zahlen
