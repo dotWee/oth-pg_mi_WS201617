@@ -31,6 +31,10 @@ int main(void) {
       is_zug_invalid = (xvalue < 0 || xvalue >= MAX)
          || (yvalue < 0 || yvalue >= MAX);
 
+      if(!is_zug_invalid) {
+        is_zug_invalid = (spielfeld[xvalue][yvalue] != EMPTY);
+      }
+
       if(is_zug_invalid) {
         printf("Ihr Zug war ungültig, bitte versuchen Sie es erneut\n");
       } 
