@@ -1,0 +1,30 @@
+solved  | task
+   x    | task_00_buchstaben-zaehlen
+   x    | task_00_division-durch-2
+   x    | task_01_ermittle-das-maximum
+   x    | task_02_summer-einer-liste-von-zahlen-berechnen
+   x    | task_03_mittelwert-berechnen
+   x    | task_04_potenzen
+   x    | task_05_wurzel-ziehen
+   x    | task_06_zeichen-ersetzen
+   x    | task_07_zeichenketten-ersetzen
+   x    | task_08_sortieren-einer-liste-von-zahlen
+
+solved  | paper     task
+   x    | paper_01_task_01
+   x    | paper_01_task_02
+   x    | paper_01_task_03
+   x    | paper_01_task_04
+   x    | paper_01_task_05
+   x    | paper_01_task_06
+   x    | paper_01_task_07
+
+solved  | paper     task
+   x    | paper_02_task_01
+   x    | paper_02_task_02
+   x    | paper_02_task_03
+   x    | paper_02_task_04
+   x    | paper_02_task_05
+   x    | paper_02_task_06
+   x    | paper_02_task_07
+   x    | paper_02_task_08
