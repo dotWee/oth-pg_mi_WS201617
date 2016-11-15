@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_LENGTH 100
+#define BUFFER_SIZE 100
 #define PATIENTEN_ANZAHL 4
 
 typedef struct patient {
     int nummer;
-    char name[MAX_LENGTH];
-    char vorname[MAX_LENGTH];
+    char name[BUFFER_SIZE];
+    char vorname[BUFFER_SIZE];
 
-    char strasse[MAX_LENGTH];
-    char postleitzahl[MAX_LENGTH];
-    char ort[MAX_LENGTH];
+    char strasse[BUFFER_SIZE];
+    char postleitzahl[BUFFER_SIZE];
+    char ort[BUFFER_SIZE];
 } Patient;
 
 int main(int argc, char *argv[]) {
@@ -28,23 +28,23 @@ int main(int argc, char *argv[]) {
 
         // Name einlesen
         printf("Name: ");
-        fgets(p.name, MAX_LENGTH, stdin);
+        fgets(p.name, BUFFER_SIZE, stdin);
 
         // Vorname einlesen
         printf("Vorname: ");
-        fgets(p.vorname, MAX_LENGTH, stdin);
+        fgets(p.vorname, BUFFER_SIZE, stdin);
 
         // Straße einlesen
         printf("Straße: ");
-        fgets(p.strasse, MAX_LENGTH, stdin);
+        fgets(p.strasse, BUFFER_SIZE, stdin);
 
         // Postleitzahl einlesen
         printf("Postleitzahl: ");
-        fgets(p.postleitzahl, MAX_LENGTH, stdin);
+        fgets(p.postleitzahl, BUFFER_SIZE, stdin);
 
         // Ort einlesen
         printf("Ort: ");
-        fgets(p.ort, MAX_LENGTH, stdin);
+        fgets(p.ort, BUFFER_SIZE, stdin);
 
         // Patient in Array speichern
         patienten[i] = p;
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
     Patient temp;
     for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
         for (int j = 1; j < PATIENTEN_ANZAHL; j++) {
-            if (strncmp(patienten[j - 1].name, patienten[j].name, MAX_LENGTH) > 0) {
+            if (strncmp(patienten[j - 1].name, patienten[j].name, BUFFER_SIZE) > 0) {
                 temp = patienten[j - 1];
                 patienten[j - 1] = patienten[j];
                 patienten[j] = temp;
