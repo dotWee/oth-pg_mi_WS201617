@@ -11,7 +11,7 @@ char *xor(char *message, char *key) {
     // Für jeden Buchstaben
     int i;
     for (i = 0; i < messagelen; i++) {
-        encrypted[i] = message[i] ^ key[i % keylen];
+        encrypted[i] = message[i] ^ key[i % (sizeof(key) / sizeof(char))];
     }
 
     // Stringende definieren
