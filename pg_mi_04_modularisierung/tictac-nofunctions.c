@@ -1,10 +1,16 @@
 #include <stdio.h>
 
+/*
+ * Ausgangsbasis: Code aus letztem Kapitel.
+ * Bisher steht alles in main, das soll sich ändern...
+ */
+
 #define EMPTY 0
 #define SPIELER1 1
 #define SPIELER2 2
 #define MAX 3
 
+// Spiel
 int main(void) {
   int spieler = SPIELER1;
   int xvalue = 0, yvalue = 0;
