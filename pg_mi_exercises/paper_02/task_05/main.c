@@ -14,10 +14,46 @@ typedef struct patient {
     char ort[BUFFER_SIZE];
 } Patient;
 
-int main(int argc, char *argv[]) {
-    Patient patienten[PATIENTEN_ANZAHL];
+/**
+ * Diese Funktion gibt eine gegebene Patienten Liste aus.
+ *
+ * @param patienten
+ */
+void printp(Patient patienten[]) {
+    Patient temp;
+    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
+        temp = patienten[i];
+        printf("Patient: nummer=%d name=%s vorname=%s strasse=%s postleitzahl=%s ort=%s", temp.nummer, temp.name,
+               temp.vorname, temp.strasse, temp.postleitzahl, temp.ort);
+    }
+}
 
-    // 4 Patienten einlesen und in Array speichern
+/**
+ * Diese Funktion sortiert eine Patienten Liste nach
+ * aufsteigendem Nachnamen.
+ *
+ * @param patienten
+ */
+void sortp(Patient patienten[PATIENTEN_ANZAHL]) {
+    Patient temp;
+    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
+        for (int j = 1; j < PATIENTEN_ANZAHL; j++) {
+            if (strncmp(patienten[j - 1].name, patienten[j].name, BUFFER_SIZE) > 0) {
+                temp = patienten[j - 1];
+                patienten[j - 1] = patienten[j];
+                patienten[j] = temp;
+            }
+        }
+    }
+}
+
+/**
+ * Diese Funktion liest eine bestimmte Anzahl von Patienten in
+ * eine vordefinierte Liste ein.
+ *
+ * @param patienten
+ */
+void readp(Patient patienten[PATIENTEN_ANZAHL]) {
     for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
 
         // Deklariere neuen Patient
@@ -49,25 +85,19 @@ int main(int argc, char *argv[]) {
         // Patient in Array speichern
         patienten[i] = p;
     }
+}
+
+int main(int argc, char *argv[]) {
+    Patient patienten[PATIENTEN_ANZAHL];
+
+    // Patienten einlesen und in Array speichern
+    readp(patienten);
 
     // Patienten Array sortieren
-    Patient temp;
-    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
-        for (int j = 1; j < PATIENTEN_ANZAHL; j++) {
-            if (strncmp(patienten[j - 1].name, patienten[j].name, BUFFER_SIZE) > 0) {
-                temp = patienten[j - 1];
-                patienten[j - 1] = patienten[j];
-                patienten[j] = temp;
-            }
-        }
-    }
+    sortp(patienten);
 
     // Patienten Array ausgeben
-    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
-        temp = patienten[i];
-        printf("Patient: nummer=%d name=%s vorname=%s strasse=%s postleitzahl=%s ort=%s", temp.nummer, temp.name,
-               temp.vorname, temp.strasse, temp.postleitzahl, temp.ort);
-    }
+    printp(patienten);
 
     return 0;
 }
