@@ -33,8 +33,4 @@ solved  | paper     task
         |  paper_03_task_01
    x    |  paper_03_task_02
    x    |  paper_03_task_03
-        |  paper_03_task_04
-        |  paper_03_task_05
-        |  paper_03_task_06
-        |  paper_03_task_07
-        |  paper_03_task_08
+   x    |  paper_03_task_04
