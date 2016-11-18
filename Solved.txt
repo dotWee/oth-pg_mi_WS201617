@@ -32,7 +32,7 @@ solved  | paper     task
 solved  | paper     task
         |  paper_03_task_01
         |  paper_03_task_02
-        |  paper_03_task_03
+   x    |  paper_03_task_03
         |  paper_03_task_04
         |  paper_03_task_05
         |  paper_03_task_06
