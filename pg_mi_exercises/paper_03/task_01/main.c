@@ -27,10 +27,6 @@ void print_stamm(int leerzeichen) {
     printf("|||\n");
 }
 
-void printLeerzeichen() {
-    printf(" ");
-}
-
 int main(int argc, char *argv[]) {
 
     int eingabe = 0;
