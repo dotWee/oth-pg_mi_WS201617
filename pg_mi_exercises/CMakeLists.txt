@@ -20,4 +20,9 @@ add_subdirectory(paper_02/task_06)
 add_subdirectory(paper_02/task_07)
 add_subdirectory(paper_02/task_08)
 
+# Paper 03
+add_subdirectory(paper_03/task_02)
+add_subdirectory(paper_03/task_03)
+add_subdirectory(paper_03/task_04)
+
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
