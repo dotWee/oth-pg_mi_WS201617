@@ -9,6 +9,7 @@ solved  | task
    x    | task_06_zeichen-ersetzen
    x    | task_07_zeichenketten-ersetzen
    x    | task_08_sortieren-einer-liste-von-zahlen
+   x    | task_09_volumenberechnung-eines-wuerfels
 
 solved  | paper     task
    x    | paper_01_task_01
