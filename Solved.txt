@@ -35,4 +35,4 @@ solved  | paper     task
    x    |  paper_03_task_03
    x    |  paper_03_task_04
    x    |  paper_03_task_05
-        |  paper_03_task_06
+   x    |  paper_03_task_06
