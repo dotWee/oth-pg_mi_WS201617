@@ -20,6 +20,16 @@ char *lese_zeile() {
         return NULL;
     }
 
+    // Wenn der String mit einer Newline ('\n') endet, entferne es
+    // um Aufgaben wie      Vorname
+    //                      =Nachname
+    // anstelle von
+    //                      Vorname=Nachname
+    // zu vermeiden
+    if (buffer[strlen(buffer) - 1] == '\n') {
+        buffer[strlen(buffer) - 1] = '\0';
+    }
+
     // Speicherbedarf des Strings ermitteln
     // Stringlaenge + 1 Zeichen fuer \0 am Ende
     speicherbedarf = strlen(buffer) + 1;
@@ -40,6 +50,7 @@ int main(int argc, const char *argv[]) {
     // Neue Map definieren
     Map *map = map_create(MAX_ENTRIES);
 
+
     for (int i = 0; i < MAX_ENTRIES; ++i) {
         char *key = lese_zeile();
         char *value = lese_zeile();
@@ -48,8 +59,11 @@ int main(int argc, const char *argv[]) {
         map_enqueue(map, key, value);
     }
 
-    // Aktuelles Element ausgeben
-    map_dequeue(map);
+    // Führe aus, so lange wie die Größe ungleich 0 ist
+    while (map->size != 0) {
+        // Ältestes Element ausgeben
+        map_dequeue(map);
+    }
 
     // Speicher leeren
     map_free(map);

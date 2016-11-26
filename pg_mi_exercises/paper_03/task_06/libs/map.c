@@ -5,8 +5,15 @@
 Map *map_create(int max_elements) {
     Map *map = malloc(sizeof(Map));
 
-    map->key_elements = calloc(sizeof(void *), (size_t) max_elements);
-    map->value_elements = calloc(sizeof(void *), (size_t) max_elements);
+    // Anzahl der Elemente die zugewiesen werden sollen
+    size_t nElements = sizeof(void *);
+
+    // Größe der Elemente
+    size_t size = (size_t) max_elements;
+
+    // Benötigten Speicher initialisieren
+    map->key_elements = calloc(nElements, size);
+    map->value_elements = calloc(nElements, size);
 
     map->max_elements = max_elements;
     map->size = 0;
@@ -46,10 +53,15 @@ void *map_value_dequeue(Map *map) {
     if (map->size == 0) {
         return NULL;
     } else {
+        // Hole das Älteste Element
         void *element_to_return = map->value_elements[0];
+
+        // Rücke die Anderen nach
         for (int i = 1; i < map->size; i++) {
             map->value_elements[i - 1] = map->value_elements[i];
         }
+
+        // Gib das Älteste Element zurück
         return element_to_return;
     }
 }
@@ -75,15 +87,21 @@ void *map_key_dequeue(Map *map) {
     if (map->size == 0) {
         return NULL;
     } else {
+        // Hole das Älteste Element
         void *element_to_return = map->key_elements[0];
+
+        // Rücke die Anderen nach
         for (int i = 1; i < map->size; i++) {
             map->key_elements[i - 1] = map->key_elements[i];
         }
+
+        // Gib das Älteste Element zurück
         return element_to_return;
     }
 }
 
 void map_dequeue(Map *map) {
+
     // Hole ältesten Key aus der Map
     char *key = map_key_dequeue(map);
 
