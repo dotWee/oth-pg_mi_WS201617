@@ -4,7 +4,7 @@
 
 #include "libs/map.h"
 
-#define MAX_ENTRIES 10
+#define MAX_ENTRIES 1
 #define MAX_STRING_LENGTH 80
 
 char *lese_zeile() {
