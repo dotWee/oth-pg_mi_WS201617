@@ -69,7 +69,7 @@ int main(int argc, const char *argv[]) {
         Element *element = map_dequeue(map);
 
         // Gib es aus
-        printf("%s=%s", element->key, element->value);
+        printf("\n%s=%s", element->key, element->value);
 
         // Gib Speicher wieder frei
         element_free(element);
