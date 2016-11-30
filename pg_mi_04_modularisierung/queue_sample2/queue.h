@@ -18,6 +18,6 @@ typedef struct _queue {
 Queue* queue_create(int max_elements);
 int queue_enqueue(Queue* q, void* element);
 void* queue_dequeue(Queue* q);
-void queue_free(Queue* q);
+void queue_free(Queue* q, void free_element(void*));
 
 #endif
