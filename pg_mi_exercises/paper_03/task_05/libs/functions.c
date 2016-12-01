@@ -32,10 +32,6 @@ double my_pow(int zahl, int exponent) {
 
     switch (exponent) {
 
-        case -1:
-            pow = 0 - zahl;
-            break;
-
         case 0:
             pow = 1;
             break;
@@ -51,7 +47,7 @@ double my_pow(int zahl, int exponent) {
                 for (int n = 1; n <= exponent; n++) {
                     pow = pow * zahl;
                 }
-            } else if (exponent < -1) {
+            } else if (exponent <= -1) {
                 pow = 1;
 
                 for (int n = 0; n > exponent; n--) {
