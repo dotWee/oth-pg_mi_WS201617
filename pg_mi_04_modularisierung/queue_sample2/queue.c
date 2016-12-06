@@ -44,11 +44,15 @@ void* queue_dequeue(Queue* q) {
     }
 }
 
-// Nur verwenden, wenn die Queue keine Elemente mehr enthält, die
-// dynamisch mit Malloc etc. angelegt wurden.
-void queue_free(Queue* q) {
+
+void queue_free(Queue* q, void free_element(void*)) {
     if(q != NULL) {
-        // Für Elemente aus dem Heap müsste hier noch was rein!
+        // evtl. Elemente aus dem Heap löschen
+        if(free_element != NULL) {
+            for(int i = 0; i < q->size; i++) {
+                free_element(q->elements[i]);
+            }
+        }
         free(q->elements);
         free(q);
     }
