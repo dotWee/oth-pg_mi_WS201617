@@ -60,8 +60,8 @@ char *string_replace(char *original, char *stringToLookFor, char *stringReplacem
         //printf("-----Ende-----\n\n");
     }
 
-    printf("-----Return-----\n");
-    printf("result=%s\n", result);
+    //printf("-----Return-----\n");
+    //printf("result=%s\n", result);
     strcpy(buffer, original);
     return result;
 }
