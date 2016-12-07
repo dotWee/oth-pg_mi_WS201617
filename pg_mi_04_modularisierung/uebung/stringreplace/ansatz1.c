@@ -3,6 +3,12 @@
 // replace "abc" "cdefg" "Hallo duch kannst ja noch nicht mal das abc."
 //
 
+// Anmerkung: Gemeinsam in der Übung interaktive erarbeitete Lösung.
+// hat noch folgende Schwächen: (Aufgaben)
+// * Erkennt nicht 100% alle Fälle von to_replace (welche??)
+// * Man kann durch gezielte Wahl von to_replace und replacement aus 
+//   dem reservierten Speicherbereich rausschreiben (wie??) 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
