@@ -31,9 +31,15 @@ solved  | paper     task
    x    | paper_02_task_08
    
 solved  | paper     task
-   x    |  paper_03_task_01
-   x    |  paper_03_task_02
-   x    |  paper_03_task_03
-   x    |  paper_03_task_04
-   x    |  paper_03_task_05
-   x    |  paper_03_task_06
+   x    | paper_03_task_01
+   x    | paper_03_task_02
+   x    | paper_03_task_03
+   x    | paper_03_task_04
+   x    | paper_03_task_05
+   x    | paper_03_task_06
+
+solved  | paper     task
+        | paper_04_task_01
+        | paper_04_task_02
+        | paper_04_task_03
+        | paper_04_task_04
