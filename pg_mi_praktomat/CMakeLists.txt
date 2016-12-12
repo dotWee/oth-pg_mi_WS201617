@@ -13,5 +13,6 @@ add_subdirectory(task_07_zeichenketten-ersetzen)
 add_subdirectory(task_08_sortieren-einer-liste-von-zahlen)
 add_subdirectory(task_09_volumenberechnung-eines-wuerfels)
 add_subdirectory(task_10_zahlworte)
+add_subdirectory(task_11_stringsuche)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
