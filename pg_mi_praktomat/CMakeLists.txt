@@ -12,5 +12,6 @@ add_subdirectory(task_06_zeichen-ersetzen)
 add_subdirectory(task_07_zeichenketten-ersetzen)
 add_subdirectory(task_08_sortieren-einer-liste-von-zahlen)
 add_subdirectory(task_09_volumenberechnung-eines-wuerfels)
+add_subdirectory(task_10_zahlworte)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")

@@ -10,6 +10,7 @@ solved  | task
    x    | task_07_zeichenketten-ersetzen
    x    | task_08_sortieren-einer-liste-von-zahlen
    x    | task_09_volumenberechnung-eines-wuerfels
+   x    | task_10_zahlworte
 
 solved  | paper     task
    x    | paper_01_task_01
