@@ -4,7 +4,7 @@
 
 typedef struct _gui {
     GtkWidget *window;
-    GtkWidget *layout;
+    GtkWidget *table;
 
     GtkWidget *label1;
     GtkWidget *eingabe1;
@@ -25,8 +25,8 @@ GuiModel *gui_create() {
     guiModel->window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 
     // Neues Layout definieren
-    guiModel->layout = gtk_table_new(4, 2, TRUE);
-    gtk_container_add(GTK_CONTAINER(guiModel->window), guiModel->layout);
+    guiModel->table = gtk_table_new(4, 2, TRUE);
+    gtk_container_add(GTK_CONTAINER(guiModel->window), guiModel->table);
 
     // Labels setzen
     guiModel->label1 = gtk_label_new("Summand 1");
@@ -53,25 +53,24 @@ GuiModel *gui_create() {
 void gui_set_table_defaults(GuiModel *guiModel) {
 
     // Labels
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->label1, 0, 1, 0, 1);
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->label1, 0, 1, 0, 1);
     gtk_widget_show(guiModel->label1);
-
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->label2, 0, 1, 1, 2);
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->label2, 0, 1, 1, 2);
     gtk_widget_show(guiModel->label2);
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->label3, 0, 1, 2, 3);
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->label3, 0, 1, 2, 3);
     gtk_widget_show(guiModel->label2);
-
-    // Eingabe
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->eingabe1, 0, 1, 3, 4);
-    gtk_widget_show(guiModel->eingabe1);
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->eingabe2, 0, 1, 4, 5);
-    gtk_widget_show(guiModel->eingabe2);
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->eingabe3, 0, 1, 5, 6);
-    gtk_widget_show(guiModel->eingabe3);
 
     // Button
-    gtk_table_attach_defaults(GTK_TABLE(guiModel->layout), guiModel->label1, 0, 1, 6, 7);
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->button, 0, 1, 3, 4);
     gtk_widget_show(guiModel->button);
+
+    // Eingabe
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->eingabe1, 1, 2, 0, 1);
+    gtk_widget_show(guiModel->eingabe1);
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->eingabe2, 1, 2, 1, 2);
+    gtk_widget_show(guiModel->eingabe2);
+    gtk_table_attach_defaults(GTK_TABLE(guiModel->table), guiModel->eingabe3, 1, 2, 2, 3);
+    gtk_widget_show(guiModel->eingabe3);
 }
 
 void gui_show(GuiModel *guiModel) {
@@ -82,13 +81,14 @@ void gui_show(GuiModel *guiModel) {
     gtk_widget_show(guiModel->eingabe2);
     gtk_widget_show(guiModel->eingabe3);
     gtk_widget_show(guiModel->button);
-    gtk_widget_show(guiModel->layout);
+    gtk_widget_show(guiModel->table);
     gtk_widget_show(guiModel->window);
 
     gtk_main();
 }
 
 void gui_on_destroy(GtkWidget *src, gpointer data) {
+    printf("gtk_main_quit()");
     gtk_main_quit();
 }
 
@@ -99,8 +99,7 @@ void gui_on_button_click(GtkWidget *src, gpointer data) {
 
 void gui_set_signals(GuiModel *guiModel) {
     g_signal_connect(guiModel->window, "destroy", G_CALLBACK(gui_on_destroy), NULL);
-
-    g_signal_connect(guiModel->button, "clicked", G_CALLBACK(gui_on_button_click), NULL);
+    g_signal_connect(guiModel->button, "clicked", G_CALLBACK(gui_on_button_click), guiModel);
 
 }
 
