@@ -41,7 +41,15 @@ solved  | paper     task
    x    | paper_03_task_06
 
 solved  | paper     task
-        | paper_04_task_01
-        | paper_04_task_02
+   x    | paper_04_task_01
+   x    | paper_04_task_02
         | paper_04_task_03
         | paper_04_task_04
+        | paper_04_task_05
+        | paper_04_task_06
+        
+solved  | paper     task
+        | paper_05_task_01
+        | paper_05_task_02
+        | paper_05_task_03
+        | paper_05_task_04
