@@ -53,6 +53,9 @@ int main(int argc, const char *argv[]) {
         zahl++;
     }
 
+    // Ziel freigeben
+    free(ziel);
+
     // Datei Pointer schließen
     fclose(f);
 
