@@ -52,4 +52,4 @@ solved  | paper     task
    x    | paper_05_task_01
    x    | paper_05_task_02
    x    | paper_05_task_03
-        | paper_05_task_04
+   x    | paper_05_task_04
