@@ -4,6 +4,12 @@
 
 #define LEN 30
 
+/*
+ * ACHTUNG: Dieses Beispiel zeigt einen typischen Fehler:
+ *          Statt der Inhalte der Felder vorname und nachname
+ *          werden die Adressen der Strings in die Datei geschrieben.
+ */
+
 typedef struct _pat {
     int pat_id;
     char *vorname;
