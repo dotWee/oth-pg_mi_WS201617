@@ -10,6 +10,10 @@
 
 #define BUF_SIZE 1024
 
+// Hinweis:
+// --------
+// Kompilieren dieses Programms mit gcc lesen.c charbuffer.o -o read
+
 void parse_line(char *line, int len) {
     CharBuffer *buf = charbuffer_create(100);
     int state = 0;
@@ -40,9 +44,13 @@ void parse_line(char *line, int len) {
             case CSV_BETRAG:
                 if(c == '\n' || c == '\r') {
                     // Ignorieren
+                    /*
+                    // Wenn wir das hier platzieren wird evtl. der Betrag
+                    // in der letzten Zeile nicht übernommen!
                     charbuffer_append_char(buf, '\0');
                     printf("Betrag: %s\n", buf->array);
                     buf->laenge = 0;
+                    */
                 } else {
                     charbuffer_append_char(buf, c);
                 }
@@ -52,11 +60,10 @@ void parse_line(char *line, int len) {
                 return;
         }
     }
-    /*
+
     charbuffer_append_char(buf, '\0');
     printf("Betrag: %s\n", buf->array);
     buf->laenge = 0;
-    */
     
     charbuffer_free(buf);
 }
