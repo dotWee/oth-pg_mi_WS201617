@@ -5,8 +5,8 @@
 
 typedef struct _pat {
     int pat_id;
-    char vorname[LEN];
-    char nachname[LEN];
+    char vorname[LEN+1];
+    char nachname[LEN+1];
 } Patient;
 
 int main() {
