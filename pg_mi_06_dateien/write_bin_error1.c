@@ -3,6 +3,11 @@
 
 #define LEN 30
 
+/*
+ * ACHTUNG: Hier wird ein typischer Fehler beschrieben!
+ *          Das Beispiel ist keinesfalls zur Nachahmung gedacht!
+ */
+
 typedef struct _pat {
     int pat_id;
     char *vorname;
