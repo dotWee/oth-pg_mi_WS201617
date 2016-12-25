@@ -92,9 +92,48 @@ void gui_on_destroy(GtkWidget *src, gpointer data) {
     gtk_main_quit();
 }
 
+char *itoa(int i, char b[]) {
+    char const digit[] = "0123456789";
+    char *p = b;
+    if (i < 0) {
+        *p++ = '-';
+        i *= -1;
+    }
+    int shifter = i;
+    do { //Move to where representation ends
+        ++p;
+        shifter = shifter / 10;
+    } while (shifter);
+    *p = '\0';
+    do { //Move back, inserting digits as u go
+        *--p = digit[i % 10];
+        i = i / 10;
+    } while (i);
+    return b;
+}
+
 void gui_on_button_click(GtkWidget *src, gpointer data) {
-    // Berechnung durchführen
-    printf("on_button_click: Berechnung durchführen");
+    printf("on_button_click: Berechnung durchführen\n");
+
+    GuiModel *guiModel = (GuiModel *) data;
+
+    // Ersten Summanden aus Eingabe lesen
+    int summand1 = atoi(gtk_entry_get_text(GTK_ENTRY(guiModel->eingabe1)));
+    printf("Summand1=%d\n", summand1);
+
+    // Zweiten Summanden aus Eingabe lesen
+    int summand2 = atoi(gtk_entry_get_text(GTK_ENTRY(guiModel->eingabe2)));
+    printf("Summand2=%d\n", summand1);
+
+    // Ergebnis berechnen
+    int ergebnis = summand1 + summand2;
+
+    // Ergebnis als Zeichen
+    char buffer[ergebnis];
+    char *ergebnisString = itoa(ergebnis, buffer);
+
+    // Ergebnis anzeigen
+    gtk_entry_set_text(GTK_ENTRY(guiModel->eingabe3), ergebnisString);
 }
 
 void gui_set_signals(GuiModel *guiModel) {
