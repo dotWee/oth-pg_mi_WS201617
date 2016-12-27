@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define BUFFER_SIZE 100
-#define MINUS "minus"
-
 void zahlworte(int zahl, char *array) {
+    int BUFFER_SIZE = 100;
+    char MINUS[] = "minus";
 
     // zahl als string einlesen
     //char *zahl_string = itoa(zahl, malloc(sizeof(char) * BUFFER_SIZE), 10);
@@ -84,4 +83,8 @@ void zahlworte(int zahl, char *array) {
 
     // ergebnis ausgeben
     printf("|%s|", array);
+}
+
+int main(int argc, char *argv[]) {
+    return 0;
 }
