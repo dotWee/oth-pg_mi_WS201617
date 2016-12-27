@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 char *suche(char *str, char *such, unsigned int n) {
@@ -24,6 +23,7 @@ char *suche(char *str, char *such, unsigned int n) {
 
 int main(int argc, char *argv[]) {
 
+    /*
     printf("%s\n", suche("dreierleieierei", "ei", 1)); // ergibt: eierleieierei
     printf("%s\n", suche("dreierleieierei", "ei", 3)); // ergibt: eierei
     printf("%s\n", suche("dreierleieierei", "ei", 4)); // ergibt: ei
@@ -34,6 +34,7 @@ int main(int argc, char *argv[]) {
     if (suche("barbara macht barbarei ", "barba", 3) == NULL) {
         printf("nicht vorhanden!\n");
     } // sollte ausgegeben werden, da es nur 2-mal vorkommt
+    */
 
     return 0;
 }
