@@ -3,8 +3,9 @@
 
 int anzahl_treffer(char* haystack, char* needle) {
     int counter = 0;
-    for(int i = 0; i < strlen(haystack); i++) {
-        if(strncmp(needle, haystack, strlen(needle)) == 0) {
+    int len = strlen(haystack);
+    for(int i = 0; i < len; i++) {
+        if(strncmp(needle, haystack, strlen(needle)-1) == 0) {
             counter += 1;
         }
         haystack++;
@@ -13,8 +14,13 @@ int anzahl_treffer(char* haystack, char* needle) {
 }
 
 int main() {
+    /*
     char *haystack = "abcblablablafest";
     char *needle = "blab";
+    */
+
+    char *haystack = "Der Nette mit der Kette";
+    char *needle = "ette";
 
     printf("%s kommt in %s %d mal vor\n", 
         needle, haystack, 
