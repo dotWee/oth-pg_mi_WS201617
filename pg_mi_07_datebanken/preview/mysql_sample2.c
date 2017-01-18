@@ -12,7 +12,7 @@ MYSQL* connect_to_mysql() {
 		return NULL;
 	}
 
-	if(mysql_real_connect(con, "localhost", "root", NULL, NULL, 0, NULL, 0) == NULL) {
+	if(mysql_real_connect(con, "localhost", "root", "PASSWORT", NULL, 0, NULL, 0) == NULL) {
 		printf("ERROR: %s\n", mysql_error(con));
 		mysql_close(con);
 		return NULL;
