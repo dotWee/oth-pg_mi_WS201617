@@ -43,5 +43,6 @@ add_subdirectory(paper_05/task_04)
 add_subdirectory(strings/strlen)
 add_subdirectory(strings/strcmp)
 add_subdirectory(strings/strncmp)
+add_subdirectory(strings/strcat)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
