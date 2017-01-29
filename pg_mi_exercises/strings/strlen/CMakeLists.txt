@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
-project(str_len)
+project(strlen)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror")
 
 set(SOURCE_FILES main.c main.c)
-add_executable(str_len ${SOURCE_FILES})
+add_executable(strlen ${SOURCE_FILES})
