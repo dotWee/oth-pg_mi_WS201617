@@ -8,7 +8,7 @@ int strnlen_own(char *string, int maxlen) {
     int count = 0;
 
     // Solange das char mit der Position count kein null-byte ist und count kleiner maxlen ist...
-    while (string[count] && (count < maxlen)) {
+    while ((string[count] != 0) && (count < maxlen)) {
         count++;
     }
 
