@@ -7,7 +7,7 @@ int strlen_own(char *string) {
     int count = 0;
 
     // Solange das char mit der Position count kein null-byte ist...
-    while (string[count]) {
+    while (string[count] != 0) {
         count++;
     }
 
@@ -16,6 +16,7 @@ int strlen_own(char *string) {
 
 int main(int argc, char *argv[]) {
 
+    printf("Gib einen Text ein, dessen Länge ausgegeben werden soll:\n");
     char buffer[BUFFER_SIZE];
     fgets(buffer, BUFFER_SIZE, stdin);
 
