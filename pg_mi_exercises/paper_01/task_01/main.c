@@ -1,17 +1,24 @@
-
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void) {
+#define MAX_LENGTH 100
 
-    // Frange nach Namen
-    printf("Wie ist ihr name? ");
+int main(int argc, char *argv[]) {
 
-    // Lese Eingabe
-    char name[100];
-    scanf("%s", name);
+    // Frage nach Name
+    printf("Gib einen Namen ein: ");
+    char *name = malloc(sizeof(char) * MAX_LENGTH);
+    // ODER: char name2[MAX_LENGTH];
 
-    // Gib Name aus
-    printf("Hallo %s\n", name);
+    // Name einlesen
+    fgets(name, MAX_LENGTH, stdin);
 
+    // Gebe Name aus
+    printf("\nHallo %s", name);
+
+    // Gib Speicher
+    free(name);
+
+    // Gib Erfolg zurück
     return 0;
 }
