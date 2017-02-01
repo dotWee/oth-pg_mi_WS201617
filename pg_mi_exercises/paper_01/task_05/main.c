@@ -1,39 +1,80 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void) {
-    int start = 0, temp = 0;
-    char operator = 0;
+#define ERROR_FALSCHER_OPERATOR 1
 
-    printf("\nOperator:");
-    scanf(" %c", &operator);
+#define MAX_LENGTH 100
+#define OPERATOR_LENGTH 6
 
-    printf("Number:");
-    scanf("%d", &temp);
+int lese_zahl() {
 
-    int tempSum;
-    switch (operator) {
+    // Definiere Ziele
+    char *ziel = malloc(sizeof(char) * MAX_LENGTH);
+    fgets(ziel, MAX_LENGTH, stdin);
+
+    // Umwandlung in Zahl
+    int zahl = atoi(ziel);
+
+    // Speicher freigeben
+    free(ziel);
+
+    // Zahl zurückgeben
+    return zahl;
+}
+
+char *lese_operator() {
+
+    // Definiere Ziele
+    char *ziel = malloc(sizeof(char) * OPERATOR_LENGTH);
+    fgets(ziel, OPERATOR_LENGTH, stdin);
+
+    return ziel;
+}
+
+int main(int argc, char *argv[]) {
+
+    // 1. Zahl einlesen
+    printf("Zahl 1: ");
+    int zahl1 = lese_zahl();
+
+    // Operator einlesen
+    printf("Operator: ");
+    char *operator = lese_operator();
+
+    // 2. Zahl einlesen2
+    printf("Zahl 2: ");
+    int zahl2 = lese_zahl();
+
+    // Berechnen
+    int ergebnis;
+    switch (operator[0]) {
 
         case '+':
-            tempSum = start + temp;
+            ergebnis = zahl1 + zahl2;
             break;
 
         case '-':
-            tempSum = start - temp;
+            ergebnis = zahl1 - zahl2;
             break;
 
         case '*':
-            tempSum = start * temp;
+            ergebnis = zahl1 * zahl2;
             break;
 
         case '/':
-            tempSum = start / temp;
+            ergebnis = zahl1 / zahl2;
             break;
 
         default:
-            return 1;
+            printf("Falscher Operator");
+            return ERROR_FALSCHER_OPERATOR;
     }
 
-    printf("Calculate %d %c %d = %d", start, operator, temp, tempSum);
+    // Speicher leeren
+    free(operator);
+
+    // Ausgeben
+    printf("Ergebnis: %d", ergebnis);
 
     return 0;
 }
