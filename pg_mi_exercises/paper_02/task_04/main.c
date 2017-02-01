@@ -1,16 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-int main(int argc, const char* argv[]) {
-	
-	int i = 0;
-	
-	// Gehe 200 Positionen nach unten
-	int location;
-	for (location = 0; location <= 200; location++) {
-		printf("Value %c von Adresse %p, %d Stufen unter i\n", *(char*)(&i - location), &i - location, location);
-	}
+int main(int argc, char *argv[]) {
 
-	return 0;
+    int zahl = 0;
+
+    // Immer einen Schritt
+    for (int i = 0; i < 200; ++i) {
+        printf("Adresse darunter: %p\n", &zahl - i);
+    }
+
+    return 0;
 }
