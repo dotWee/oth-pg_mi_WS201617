@@ -1,23 +1,38 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_LENGTH 100
 
 int main(int argc, char *argv[]) {
 
-    int zahl1;
-    printf("Wert Zahl 1: ");
-    scanf("%d", &zahl1);
+    // Ziel für s1
+    int s1;
+    char *buffer = malloc(sizeof(char) * MAX_LENGTH);
+    printf("Zahl 1: ");
+    fgets(buffer, MAX_LENGTH, stdin);
+    s1 = atoi(buffer);
+    free(buffer);
 
-    int zahl2;
-    printf("Wert Zahl 2: ");
-    scanf("%d", &zahl2);
+    // Ziel für s2
+    int s2;
+    char *buffer2 = malloc(sizeof(char) * MAX_LENGTH);
+    printf("Zahl 2: ");
+    fgets(buffer2, MAX_LENGTH, stdin);
+    s2 = atoi(buffer2);
+    free(buffer2);
 
-    printf("\nAdresse Zahl 1: %p", &zahl1);
-    printf("\nAdresse Zahl 2: %p", &zahl2);
+    // Berechnen
+    int erg = s1 + s2;
 
-    printf("\n\n");
+    // Ausgabe Wert
+    printf("Wert Zahl 1: %d\n", s1);
+    printf("Wert Zahl 2: %d\n", s2);
 
-    int ergebnis = zahl1 + zahl2;
-    printf("Wert Ergebnis: %d", ergebnis);
-    printf("\nAdresse Ergebn: %p", &ergebnis);
+    // Ausgabe Adresse
+    printf("Adressen:\n");
+    printf("s1: %p\n", &s1);
+    printf("s2: %p\n", &s2);
+    printf("erg: %p\n", &erg);
 
     return 0;
 }
