@@ -1,17 +1,37 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void) {
+#define MAX_LENGTH 100
 
-    int start = 0, temp = 0;
+int lese_zahl() {
 
-    while (0 == 0) {
-        printf("Number:");
-        scanf("%d", &temp);
+    // Definiere Ziele
+    char *ziel = malloc(sizeof(char) * MAX_LENGTH);
+    fgets(ziel, MAX_LENGTH, stdin);
 
-        int tempSum;
-        tempSum = start + temp;
-        printf("Calculate %d %c %d = %d", start, operator, temp, tempSum);
-        start = tempSum;
+    // Umwandlung in Zahl
+    int zahl = atoi(ziel);
+
+    // Speicher freigeben
+    free(ziel);
+
+    // Zahl zurückgeben
+    return zahl;
+}
+
+int main(int argc, char *argv[]) {
+    int buffer = 0;
+
+    while (1) {
+
+        // Zahl einlesen
+        int zahl = lese_zahl();
+
+        // Aufsummieren
+        buffer = buffer + zahl;
+
+        // Ausgeben
+        printf("Summe: %d\n", buffer);
     }
 
     return 0;
