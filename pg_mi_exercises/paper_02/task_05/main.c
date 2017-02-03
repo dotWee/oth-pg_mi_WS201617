@@ -1,103 +1,94 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
-#define BUFFER_SIZE 100
-#define PATIENTEN_ANZAHL 4
+#define ANZAHL_PATIENTEN 4
+#define MAX_LENGTH 100
 
-typedef struct patient {
+typedef struct _patient {
     int nummer;
-    char name[BUFFER_SIZE];
-    char vorname[BUFFER_SIZE];
 
-    char strasse[BUFFER_SIZE];
-    char postleitzahl[BUFFER_SIZE];
-    char ort[BUFFER_SIZE];
+    char *name;
+    char *vorname;
+
+    char *strasse;
+    char *postleitzahl;
+    char *ort;
+
 } Patient;
 
-/**
- * Diese Funktion gibt eine gegebene Patienten Liste aus.
- *
- * @param patienten
- */
-void printp(Patient patienten[]) {
-    Patient temp;
-    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
-        temp = patienten[i];
-        printf("Patient: nummer=%d name=%s vorname=%s strasse=%s postleitzahl=%s ort=%s", temp.nummer, temp.name,
-               temp.vorname, temp.strasse, temp.postleitzahl, temp.ort);
-    }
+void printp(Patient *patient) {
+    printf("Name für Patient %d: %s\n", patient->nummer, patient->name);
+    printf("Vorname für Patient %d: %s\n", patient->nummer, patient->vorname);
+    printf("Straße für Patient %d: %s\n", patient->nummer, patient->strasse);
+    printf("Postleitzahl für Patient %d: %s\n", patient->nummer, patient->postleitzahl);
+    printf("Ort für Patient %d: %s\n", patient->nummer, patient->ort);
 }
 
-/**
- * Diese Funktion sortiert eine Patienten Liste nach
- * aufsteigendem Nachnamen.
- *
- * @param patienten
- */
-void sortp(Patient patienten[PATIENTEN_ANZAHL]) {
+char *lese_zeile() {
+
+    // Buffer
+    char *buffer = malloc(sizeof(char) * MAX_LENGTH);
+
+    // Einlesen
+    fgets(buffer, MAX_LENGTH, stdin);
+
+    return buffer;
+}
+
+int main(int argc, char *argv[]) {
+    Patient patienten[ANZAHL_PATIENTEN];
+
+    // 4 Mal einlesen
+    for (int i = 0; i < ANZAHL_PATIENTEN; ++i) {
+        // Patient definieren
+        Patient patient;
+        int nummer = i;
+        patient.nummer = nummer;
+
+        // Neuen Patienten einlesen
+        printf("Name für Patient %d: ", i);
+        char *name = lese_zeile();
+        patient.name = name;
+
+        printf("Vorname für Patient %d: ", i);
+        char *vorname = lese_zeile();
+        patient.vorname = vorname;
+
+        printf("Straße für Patient %d: ", i);
+        char *strasse = lese_zeile();
+        patient.strasse = strasse;
+
+        printf("Postleitzahl für Patient %d: ", i);
+        char *postleitzahl = lese_zeile();
+        patient.postleitzahl = postleitzahl;
+
+        printf("Ort für Patient %d: ", i);
+        char *ort = lese_zeile();
+        patient.ort = ort;
+
+
+        // Speichern in Array
+        patienten[i] = patient;
+    }
+
+    // Arrray sortieren
     Patient temp;
-    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
-        for (int j = 1; j < PATIENTEN_ANZAHL; j++) {
-            if (strncmp(patienten[j - 1].name, patienten[j].name, BUFFER_SIZE) > 0) {
+    for (int i = 0; i < ANZAHL_PATIENTEN; ++i) {
+
+        for (int j = 1; j < ANZAHL_PATIENTEN; ++j) {
+            if (strncmp(patienten[j - 1].name, patienten[j].name, MAX_LENGTH)) {
                 temp = patienten[j - 1];
                 patienten[j - 1] = patienten[j];
                 patienten[j] = temp;
             }
         }
     }
-}
 
-/**
- * Diese Funktion liest eine bestimmte Anzahl von Patienten in
- * eine vordefinierte Liste ein.
- *
- * @param patienten
- */
-void readp(Patient patienten[PATIENTEN_ANZAHL]) {
-    for (int i = 0; i < PATIENTEN_ANZAHL; i++) {
-
-        // Deklariere neuen Patient
-        Patient p;
-
-        // Setze neue Nummer fest
-        p.nummer = i + 1;
-
-        // Name einlesen
-        printf("Name: ");
-        fgets(p.name, BUFFER_SIZE, stdin);
-
-        // Vorname einlesen
-        printf("Vorname: ");
-        fgets(p.vorname, BUFFER_SIZE, stdin);
-
-        // Straße einlesen
-        printf("Straße: ");
-        fgets(p.strasse, BUFFER_SIZE, stdin);
-
-        // Postleitzahl einlesen
-        printf("Postleitzahl: ");
-        fgets(p.postleitzahl, BUFFER_SIZE, stdin);
-
-        // Ort einlesen
-        printf("Ort: ");
-        fgets(p.ort, BUFFER_SIZE, stdin);
-
-        // Patient in Array speichern
-        patienten[i] = p;
+    // Array ausgeben
+    for (int k = 0; k < ANZAHL_PATIENTEN; ++k) {
+        printp(&patienten[k]);
     }
-}
-
-int main(int argc, char *argv[]) {
-    Patient patienten[PATIENTEN_ANZAHL];
-
-    // Patienten einlesen und in Array speichern
-    readp(patienten);
-
-    // Patienten Array sortieren
-    sortp(patienten);
-
-    // Patienten Array ausgeben
-    printp(patienten);
 
     return 0;
 }
