@@ -1,43 +1,41 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
-char *xor(char *message, char *key) {
-    int messagelen = strlen(message);
-    int keylen = strlen(key);
+#define MAX_LENGTH 100
+#define ERROR_PARAMETER 1
 
-    char *encrypted = malloc(messagelen + 1);
+char *lese_zeile() {
 
-    // Für jeden Buchstaben
-    int i;
-    for (i = 0; i < messagelen; i++) {
-        encrypted[i] = message[i] ^ key[i % (sizeof(key) / sizeof(char))];
-    }
+    // Definiere Ziel
+    char *string = malloc(sizeof(char) * MAX_LENGTH);
 
-    // Stringende definieren
-    encrypted[messagelen] = '\0';
+    // Einlesen
+    fgets(string, MAX_LENGTH, stdin);
 
-    return encrypted;
+    // Zurückgeben
+    return string;
 }
 
 int main(int argc, char *argv[]) {
 
-    if (argc < 3) {
-        printf("Parameter fehlen!\n");
-        return -1;
+    // Nach Text fragen
+    printf("Gib einen Text ein, der verarbeitet werden soll: ");
+    char *string = lese_zeile();
+
+    // Nach Schlüssel fragen
+    printf("Gib einen Schlüssel ein: ");
+    char *key = lese_zeile();
+
+    // Verarbeitung
+    char *result = malloc(sizeof(char) * MAX_LENGTH);
+    for (int i = 0; i < strlen(string); ++i) {
+        char character = string[i];
+
+        result[i] = character ^ key[0];
     }
 
-    // Schlüssel
-    char *key = argv[1];
-
-    // Text zum verlüsseln
-    char *text = argv[2];
-
-    // Führe XOR Operation durch
-    char *resultat = xor(text, key);
-
-    // Gibt Resultat aus
-    printf("%s\n", resultat);
+    printf("Ergebnis: %s", result);
 
     return 0;
 }
